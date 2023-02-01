@@ -27,4 +27,13 @@ list2 = ["Lisa", 18, "female"]
 dict2 = {list1[i] : list2[i] for i in range(len(list1))}
 print(dict2) # {'name': 'Lisa', 'age': 18, 'gender': 'female'}
 
+# 提取字典中的目标数据
+print(("-" * 9) + ("*" * 5) + ("-" * 9))
+print("提取字典中的目标数据")
+counts = {"MBP" : 128, "Lenovo" : 256, "acer" : 208, "DELL" : 202, "HP" : 188, "ASUS" : 122}
+
+# 需求：提取上述集合中，电脑数量大于等于200的字典数据
+count1 = {key : value for key, value in counts.items() if value >= 200}
+print(count1)
+
 
