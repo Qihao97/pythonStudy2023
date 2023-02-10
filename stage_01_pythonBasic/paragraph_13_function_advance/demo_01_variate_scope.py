@@ -32,4 +32,38 @@ testA()
 testB()
 print(a)
 
+"""
+修改全局变量：
+1.如果直接在函数体内部用 a = 100 的方式来修改，是定义了同名局部变量，不影响全局变量
+2.如果需要在函数体内部修改全局变量，要使用 global a 的方式先声明全局变量，然后再修改
+"""
+print("-"*27)
+print("修改全局变量")
+
+global_v = 100
+
+def print_A():
+    print(global_v)
+
+def print_B():
+    global_v = 300
+    print(global_v)
+
+def print_C():
+    global global_v
+    global_v = 500
+
+print(global_v)
+print("-------")
+print_A()
+print(global_v)
+print("-------")
+print_B()
+print(global_v)
+print("-------")
+print_C()
+print(global_v)
+
+
+
 
