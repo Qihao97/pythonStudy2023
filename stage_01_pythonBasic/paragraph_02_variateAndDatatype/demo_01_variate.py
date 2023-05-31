@@ -30,3 +30,7 @@ print(my_name)
 # 定义变量，存储 黑马程序员 ,使用小驼峰命名
 schoolName = "黑马程序员"
 print(schoolName)
+
+# 修改变量
+schoolName = "黑马程序员，Python"
+print(schoolName)
